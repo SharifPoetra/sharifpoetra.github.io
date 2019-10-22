@@ -1,0 +1,215 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    background-color: black;
+}
+
+.anchor {
+    padding-top: 120px;
+    margin-top: -120px;
+}
+
+header {
+    width: 100%;
+    min-height: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-image: url('../images/header2.png');
+    background-position: center;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+}
+
+header h1 {
+    font-size: 500%;
+    margin-bottom: 40px;
+}
+
+header .header-content {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 100px 20px 70px;
+    text-align: center;
+}
+
+header .btn {
+    margin: 5px 3px;
+}
+
+@media(min-width:768px) {
+    header {
+        min-height: 100%;
+    }
+    
+    header h1 {
+        font-size: 700%;
+        margin-bottom: 65px;
+        margin-top: -30px;
+    }
+    
+    header .header-content {
+        width: 47%;
+    }
+}
+
+.navbar-default {
+    border-color: rgba(34,34,34,.05);
+    background-color: white;
+    transition: all .35s;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+}
+
+@media(min-width:768px) {
+    .navbar-default {
+        border-color: rgba(255,255,255,.4);
+        background-color: transparent;
+    }
+
+    .navbar-default .navbar-header .navbar-brand {
+        color: rgba(255,255,255,.7);
+    }
+
+    .navbar-default .navbar-header .navbar-brand:hover,
+    .navbar-default .navbar-header .navbar-brand:focus {
+        color: #fff;
+    }
+
+    .navbar-default .nav > li>a,
+    .navbar-default .nav>li>a:focus {
+        color: rgba(255,255,255,.7);
+    }
+
+    .navbar-default .nav > li>a:hover,
+    .navbar-default .nav>li>a:focus:hover {
+        color: #fff;
+    }
+
+    .navbar-default.affix {
+        border-color: #fff;
+        background-color: white;
+        box-shadow: 0px 7px 20px 0px rgba(0,0,0,0.1);
+    }
+
+    .navbar-default.affix .navbar-header .navbar-brand {
+        color: yellowgreen;
+    }
+
+    .navbar-default.affix .navbar-header .navbar-brand:hover,
+    .navbar-default.affix .navbar-header .navbar-brand:focus {
+        color: forestgreen;
+    }
+
+    .navbar-default.affix .nav > li>a,
+    .navbar-default.affix .nav>li>a:focus {
+        color: #222;
+    }
+
+    .navbar-default.affix .nav > li>a:hover,
+    .navbar-default.affix .nav>li>a:focus:hover {
+        color: yellowgreen;
+    }
+}
+
+center {
+    background: url("../images/fade.png"), url("../images/maze.png");
+    background-position: top, center;
+    background-repeat: no-repeat, repeat;
+    background-size: 100% auto, auto;
+}
+
+
+.btn-primary {
+    border-color: black;
+    border-width: 2px;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    border-color: white;
+}
+
+hr {
+    margin: 70px;
+    border-color: #888;
+}
+
+.projects {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects p {
+    font-size: 17px;
+}
+
+@media(min-width:768px) {
+    .projects {
+        width: 70%;
+    }
+    
+    .projects p {
+        max-width: 70%;
+    }
+}
+
+.projects h1 {
+    font-weight: bold;
+}
+
+.projects h1 svg {
+    color: #888;
+}
+
+.project {
+    border: #444 solid 3px;
+    border-radius: 20px;
+    color: #CCC;
+    max-width: 360px;
+    margin: 12px;
+    margin-top: 32px;
+    padding: 12px;
+    display: inline-table;
+}
+
+.project p {
+    text-align: left;
+    max-width: 100%;
+}
+
+.project h2 {
+    margin-bottom: 18px;
+    color: white;
+    text-align: left;
+}
+
+.project img {
+    max-width: 120px;
+    border-radius: 20px;
+    border: #222 solid 2px;
+    margin-bottom: 8px;
+    margin-left: 8px;
+}
+
+@media(min-width:450px) {
+    .project img {
+        float: right;
+    }
+}
+
+footer {
+    text-align: center;
+    margin: 12px;
+    color: #888;
+}

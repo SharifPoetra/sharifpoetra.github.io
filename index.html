@@ -10,12 +10,18 @@
     <!-- Embeded links meta tags -->
     <meta property="og:type" content="website" />
     <meta property="og:title" content="sharif's website" />
-    <meta property="og:color" content="#0000FF" />
+    <meta property="og:color" content="#0062cc" />
+<!--     <meta property="og:image" content="http://i.imgur.com/dB4erDr.png"> -->
+    <meta property="og:description" content="I like making things.">
+    <meta property="og:site_name" content="sharif">
+    <meta property="og:url" content="https://shrf.xyz">
+    <meta name="theme-color" content="#0062cc">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton|Passion+One|PT+Sans+Caption" type="text/css">
-
+    <link rel="stylesheet" href="css/custom.css"/>
+    
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -24,9 +30,8 @@
     <script src="https://cdn.datatables.net/v/bs4/dt-1.10.16/cr-1.4.1/r-2.2.0/datatables.min.js"></script>
   </head>
   
-  <body class="p-3 bg-secondary">
-    <nav class="shadow navbar navbar-expand-lg navbar-dark bg-primary rounded">
-      <a class="navbar-brand" href="#">Sharif</a>
+  <body>
+    <nav class="shadow navbar navbar-expand-lg navbar-dark bg-primary rounded">        <a class="navbar-brand" href="#">Sharif</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -40,7 +45,7 @@
           </li>
           <li class="nav-item dropdown">
             <a class="fa fa-book nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              My Works
+              My Projects
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <a class="dropdown-item" href="#emiliaapi">Emilia API</a>
@@ -51,31 +56,56 @@
         </ul>
       </div>
     </nav>
-    <br><br>
-    <h1 class="center">My Works</h1>
-    <div id="emiliaapi" class="w-auto mb-3 card rounded shadow" style="width: 18rem;">
-      <img src="images/emilia.png" class="card-img-top" alt="emilia">
-      <div class="card-body">
-        <h5 class="card-title">Emilia API</h5>
-        <p class="card-text">Emilia API is a service that provides Discord bot developers or others the ease in getting content from the internet. We provide easy to use interface and take hard tasks away from developers.</p>
-        <a href="https://emilia.shrf.xyz" class="fa fa-file-text btn btn-primary"> Documentation</a>
-      </div>
-    </div>
     
-    <div id="thunder" class="shadow w-auto card mb-3 rounded" style="width: 18rem;">
-      <img src="images/thunder.png" class="border border-primary card-img-top" alt="thunder">
-      <div class="card-body">
-        <h5 class="card-title">Thunder</h5>
-        <p class="card-text">
-          Hello! I am Thunder, a simple but powerfull multipurpose bot <br>
-          I was written in Java by SharifPoetra <br>
-          Type <code>~help</code> to see my commands! <br>
-          Some of my features including high quality music, utilities and a lots of fun! <br>
-        </p>
+<!--     <header>
+      <div class="header-content">
+        <h1>Sharif</h1>
       </div>
-      <div class="card-body">
-        <a class="btn btn-primary fa fa-plus card-link stretched-link" href="https://discordapp.com/oauth2/authorize?client_id=580626972741337088&scope=bot&permissions=70642768&guild_id=0"> Invite</a>
+    </header>
+     -->
+
+    <center>
+      <br>
+      <div class="projects">
+        <h1><i class="fa fa-user"> About Me</i></h1>
+        <p>Hi i'm Sharif, you can call me SharifPoetra.<br>Hobby developer. Mainly developing in JS and Java. Trying to improve JS and Java skills. I like making things! Through code, all things are possible.</p>
+        <hr>
+        
+        <h1><i class="fa fa-book"> My Projects</i></h1>
+        
+        <div class="project">
+          <div id="emiliaapi" class="w-auto mb-3 card bg-transparent rounded" style="width: 18rem;">
+            <img src="images/emilia.png" class="card-img-top" alt="emilia">
+            <div class="card-body">
+              <h5 class="card-title">Emilia API</h5>
+              <p class="card-text">Emilia API is a service that provides Discord bot developers or others the ease in getting content from the internet. We provide easy to use interface and take hard tasks away from developers.</p>
+              <a href="https://emilia.shrf.xyz" class="fa fa-file-text btn btn-primary"> Documentation</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project">
+          <div id="thunder" class="w-auto card mb-3 bg-transparent rounded" style="width: 18rem;">
+            <img src="images/thunder.png" class="border border-primary card-img-top" alt="thunder">
+            <div class="card-body">
+              <h5 class="card-title">Thunder</h5>
+              <p class="card-text">
+                Hello! I am Thunder, a simple but powerfull multipurpose bot <br>
+                I was written in Java by SharifPoetra <br>
+                Type <code>~help</code> to see my commands! <br>
+                Some of my features including high quality music, utilities and a lots of fun! <br>
+              </p>
+            </div>
+            <div class="card-body">
+              <a class="btn btn-primary fa fa-plus card-link stretched-link" href="https://discordapp.com/oauth2/authorize?client_id=580626972741337088&scope=bot&permissions=70642768&guild_id=0"> Invite</a>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </center>
+    
+    <footer>
+      &copy; 2019 SharifPoetra
+    </footer>
   </body>
 </html>
