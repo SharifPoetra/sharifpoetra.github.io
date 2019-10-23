@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton|Passion+One|PT+Sans+Caption" type="text/css">
-    <link rel="stylesheet" href="css/custom.css"/>
+    <link rel="stylesheet" href="css/custom.css" type="text/css">
     
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
@@ -31,7 +31,9 @@
   </head>
   
   <body>
-    <nav class="shadow navbar navbar-expand-lg navbar-dark bg-primary rounded">        <a class="navbar-brand" href="#">Sharif</a>
+    <div id="particles-js"></div>
+    <nav class="shadow navbar navbar-expand-lg navbar-dark bg-primary rounded"> 
+      <a class="navbar-brand" href="#">Sharif</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -64,18 +66,15 @@
       </div>
     </header>
      -->
-
+    
     <center>
       <br><br><br>
       <div class="projects">
         <h1><i class="fa fa-user"> About Me</i></h1>
         <p>Hi i'm Sharif, you can call me SharifPoetra.<br>Hobby developer. Mainly developing in JS and Java. Trying to improve JS and Java skills. I like making things! Through code, all things are possible.</p>
-       
         <hr>
         <br>
-        
         <h1><i class="fa fa-book"> My Projects</i></h1>
-        
         <div class="project">
           <div id="emiliaapi" style="width: 18rem;">
             <img src="images/emilia.png" class="card-img-top" alt="emilia">
@@ -106,7 +105,8 @@
         </div>
       </div>
     </center>
-    
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
     <footer>
       &copy; 2019 SharifPoetra
     </footer>
