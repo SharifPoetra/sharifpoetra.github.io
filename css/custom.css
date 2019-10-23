@@ -6,6 +6,20 @@ body {
     background-color: black;
 }
 
+#particles-js {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+}
+
+p, div {
+    pointer-events: none;
+}
+
+a, button {
+    pointer-events: all;
+}
+
 .anchor {
     padding-top: 120px;
     margin-top: -120px;
@@ -206,12 +220,6 @@ hr {
     .project img {
         float: right;
     }
-}
-
-#particles-js {
-  height: 100%;
-  width: 100%;
-  position: fixed;
 }
 
 footer {
