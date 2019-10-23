@@ -4,6 +4,7 @@ body {
     height: 100%;
     font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
     background-color: black;
+    scroll-behavior: smooth;
 }
 
 #particles-js {
