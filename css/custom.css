@@ -19,7 +19,7 @@ header {
     justify-content: center;
     align-items: center;
     color: #fff;
-    background-image: url('../images/header2.png');
+/*     background-image: url('../images/header.png'); */
     background-position: center;
     background-size: cover;
     -o-background-size: cover;
@@ -206,6 +206,12 @@ hr {
     .project img {
         float: right;
     }
+}
+
+#particles-js {
+  height: 100%;
+  width: 100%;
+  position: fixed;
 }
 
 footer {
