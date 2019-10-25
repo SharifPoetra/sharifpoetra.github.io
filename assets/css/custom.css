@@ -2,23 +2,20 @@ html,
 body {
     width: 100%;
     height: 100%;
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
-    background-color: black;
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    background-color: transparent;
     scroll-behavior: smooth;
 }
 
-#particles-js {
-  height: 100%;
-  width: 100%;
-  position: fixed;
-}
 
-p, div {
+#particles-js canvas {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    left: 0%;
     pointer-events: none;
-}
-
-a, button {
-    pointer-events: all;
+    background-color: #227dfa;
+    z-index: -1;
 }
 
 .anchor {
@@ -26,129 +23,59 @@ a, button {
     margin-top: -120px;
 }
 
-header {
+.navbar-custom {
+    background-color: #227dfa;
+    position: fixed;
+    top: 0;
     width: 100%;
-    min-height: auto;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-  /* background-image: url('../images/header.png'); */
-    background-position: center;
-    background-size: cover;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
 }
 
-header h1 {
-    font-size: 500%;
-    margin-bottom: 40px;
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: rgba(255, 255, 255, .8);
 }
 
-header .header-content {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 100px 20px 70px;
-    text-align: center;
+.navbar-custom .navbar-nav .nav-link {
+    color: rgba(214, 234, 248, .5);
 }
 
-header .btn {
-    margin: 5px 3px;
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #ffffff;
 }
 
-@media(min-width:768px) {
-    header {
-        min-height: 100%;
-    }
-    
-    header h1 {
-        font-size: 700%;
-        margin-bottom: 65px;
-        margin-top: -30px;
-    }
-    
-    header .header-content {
-        width: 47%;
-    }
+.navbar-custom .dropdown-menu {
+    background-color: #227dfa;
 }
 
-.navbar-default {
-    border-color: rgba(34,34,34,.05);
-    background-color: white;
-    transition: all .35s;
-    -webkit-transition: all .35s;
-    -moz-transition: all .35s;
+.navbar-custom .dropdown-item {
+    color: #ffffff;
 }
 
-@media(min-width:768px) {
-    .navbar-default {
-        border-color: rgba(255,255,255,.4);
-        background-color: transparent;
-    }
-
-    .navbar-default .navbar-header .navbar-brand {
-        color: rgba(255,255,255,.7);
-    }
-
-    .navbar-default .navbar-header .navbar-brand:hover,
-    .navbar-default .navbar-header .navbar-brand:focus {
-        color: #fff;
-    }
-
-    .navbar-default .nav > li>a,
-    .navbar-default .nav>li>a:focus {
-        color: rgba(255,255,255,.7);
-    }
-
-    .navbar-default .nav > li>a:hover,
-    .navbar-default .nav>li>a:focus:hover {
-        color: #fff;
-    }
-
-    .navbar-default.affix {
-        border-color: #fff;
-        background-color: white;
-        box-shadow: 0px 7px 20px 0px rgba(0,0,0,0.1);
-    }
-
-    .navbar-default.affix .navbar-header .navbar-brand {
-        color: yellowgreen;
-    }
-
-    .navbar-default.affix .navbar-header .navbar-brand:hover,
-    .navbar-default.affix .navbar-header .navbar-brand:focus {
-        color: forestgreen;
-    }
-
-    .navbar-default.affix .nav > li>a,
-    .navbar-default.affix .nav>li>a:focus {
-        color: #222;
-    }
-
-    .navbar-default.affix .nav > li>a:hover,
-    .navbar-default.affix .nav>li>a:focus:hover {
-        color: yellowgreen;
-    }
+.navbar-custom .dropdown-item:hover,
+.navbar-custom .dropdown-item:focus {
+    color: #333333;
+    background-color: rgba(214, 234, 248, .5);
 }
 
 center {
-    background: url("../images/fade.png"), url("../images/maze.png");
+    background: url("../images/fade.png"), url("");
     background-position: top, center;
     background-repeat: no-repeat, repeat;
-    background-size: 100% auto, auto;
+    background-size: 200% auto, auto;
+    margin-top: 40px;
 }
 
 
 .btn-primary {
-    border-color: black;
+    color: rgba(255, 255, 255, .9);
+    border-color: grey;
     border-width: 2px;
 }
 
-.btn-primary:hover, .btn-primary:focus {
-    border-color: white;
+.btn-primary:hover,
+.btn-primary:focus {
+    border-color: black;
 }
 
 hr {
@@ -160,7 +87,7 @@ hr {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    color: white;
+    color: rgba(255, 255, 255, .8);
     justify-content: center;
     align-items: center;
 }
@@ -173,7 +100,7 @@ hr {
     .projects {
         width: 70%;
     }
-    
+
     .projects p {
         max-width: 70%;
     }
@@ -205,7 +132,7 @@ hr {
 
 .project h2 {
     margin-bottom: 18px;
-    color: white;
+    color: rgba(255, 255, 255, .8);
     text-align: left;
 }
 
@@ -226,5 +153,5 @@ hr {
 footer {
     text-align: center;
     margin: 12px;
-    color: #888;
+    color: rgba(255, 255, 255, .7);
 }
