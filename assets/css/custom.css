@@ -7,13 +7,6 @@ body {
   scroll-behavior: smooth;
 }
 
-.animate {
-  animation-delay: 6s;
-  -webkit-animation-duration: 0.3s;
-  animation-fill-mode: both;
-  -webkit-animation-fill-mode: both;
-}
-
 @keyframes slideIn {
   0% {
     transform: translateY(1rem);
