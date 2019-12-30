@@ -1,114 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>sharif</title>
 
-    <!-- Embeded links meta tags -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="sharif's website" />
-    <meta property="og:color" content="#227dfa" />
-    <meta property="og:image" content="assets/images/emilia.png">
-    <meta property="og:description" content="I like making things.">
-    <meta property="og:site_name" content="sharif">
-    <meta property="og:url" content="https://shrf.xyz">
-    <meta name="theme-color" content="#227dfa">
-    <link rel="icon" href="assets/images/emilia.png">
-    
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Anton|Passion+One|PT+Sans+Caption" type="text/css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <link rel="stylesheet" href="assets/css/custom.css" type="text/css">
-    
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/moment.min.js" integrity="sha256-zG8v+NWiZxmjNi+CvUYnZwKtHzFtdO8cAKUIdB8+U9I=" crossorigin="anonymous"></script>
-    <script src="https://cdn.datatables.net/v/bs4/dt-1.10.16/cr-1.4.1/r-2.2.0/datatables.min.js"></script>
-    
-    <script data-ad-client="ca-pub-9719587075754660" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  </head>
-  
-  <body>
-    <nav class="navbar navbar-expand-md navbar-dark navbar-static-top" style="background-color: #000000;">
-      <a class="navbar-brand animated flip" href="#">Sharif</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="clearfix collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item dropdown">
-            <a class="fa fa-book nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              My Projects
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="#emilia-api">Emilia API</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#thunder">Thunder</a>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </nav>
-    
-    <center>
-      <div id="particles-js" class="particle"></div>
-      <br><br><br>
-      <div class="projects">
-        <h1 class="animated bounce delay-1s"><i class="fas fa-user-circle"> SharifPoetra</i></h1><br>
-        <a href="mailto:sharifpoetra@gmail.com" class="btn btn-primary btn-lg animated fadeInLeft delay-1s" style="background-color:#123456"><i class="fas fa-envelope"> E-Mail</i></a>
-        <a href="https://github.com/SharifPoetra" class="btn btn-primary btn-lg animated fadeInLeft delay-1s" style="background-color:#24292E"><i class="fab fa-github"></i> GitHub</a>
-        <a href="https://discord.gg/ZEFrfj5" class="btn btn-primary btn-lg animated bounceIn delay-1s" style="background-color:#7289DA"><i class="fab fa-discord"> Discord</i></a>
-        <a href="https://twitter.com/SharifPoetra_" class="btn btn-primary btn-lg animated fadeInRight delay-1s" style="background-color:#4AB3F4"><i class="fab fa-twitter"> </i> Twitter</a>
-        <a href="https://twitch.tv/sharifpoetra" class="btn btn-primary btn-lg animated fadeInRight delay-1s" style="background-color:#4B367C"><i class="fab fa-twitch"> </i> Twitch</a>
-        <a href="https://reddit.com/u/SharifPoetra" class="btn btn-primary btn-lg animated fadeInLeft delay-1s" style="background-color:#FF4500"><i class="fab fa-reddit"> </i> Reddit</a>
-        <a href="https://paypal.me/poetrakencana" class="btn btn-primary btn-lg animated bounceIn delay-1s" style="background-color:#0070BA"><i class="fab fa-paypal"> </i> PayPal</a>
-        <a href="https://www.youtube.com/channel/UC10WpzT0YtNBW4STaVaY3yw" class="btn btn-primary btn-lg animated fadeInRight delay-1s" style="background-color:#FF0000"><i class="fab fa-youtube"> YouTube</i></a>
-        <a href="https://haste.shrf.xyz" class="btn btn-primary btn-lg animated fadeInRight delay-1s" style="background-color:#002b36"><i class="fas fa-paste"> </i> Haste</a>
-        <hr class="animated fadeIn delay-2s">
-        <h1 class="animated fadeInDown delay-3s"><i class="fa fa-user"> About Me</i></h1>
-        <p class="animated fadeInDown delay-3s">Hi i'm Sharif, you can call me SharifPoetra.<br>Hobby developer. Mainly developing in JS and Java. Trying to improve JS and Java skills. I like making things! Through code, all things are possible.</p>
-        <hr class="animated fadeInDown delay-4s">
-        <br>
-        <h1 class="animated fadeInDown delay-4s"><i class="fa fa-book"> My Projects</i></h1>
-        <div id="emilia-api" class="project animated fadeInLeft delay-5s">
-          <div style="width: 18rem;">
-            <img src="assets/images/emilia.png" class="card-img-top" alt="emilia">
-            <div class="card-body">
-              <h2 class="card-title">Emilia API</h2>
-              <p class="card-text">Emilia API is a service that provides Discord bot developers or others the ease in getting content from the internet. We provide easy to use interface and take hard tasks away from developers.</p>
-              <a href="https://emilia.shrf.xyz" class="fas fa-file-alt btn btn-primary"> Documentation</a>
-            </div>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>sharif</title>
+
+  <!-- Embeded links meta tags -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="sharif's website" />
+  <meta property="og:color" content="#227dfa" />
+  <meta property="og:image" content="assets/images/emilia.png">
+  <meta property="og:description" content="I like making things.">
+  <meta property="og:site_name" content="sharif">
+  <meta property="og:url" content="https://shrf.xyz">
+  <meta name="theme-color" content="#227dfa">
+  <link rel="icon" href="assets/images/emilia.png">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Anton|Passion+One|PT+Sans+Caption" type="text/css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link rel="stylesheet" href="assets/css/custom.css" type="text/css">
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/moment.min.js" integrity="sha256-zG8v+NWiZxmjNi+CvUYnZwKtHzFtdO8cAKUIdB8+U9I=" crossorigin="anonymous"></script>
+  <script src="https://cdn.datatables.net/v/bs4/dt-1.10.16/cr-1.4.1/r-2.2.0/datatables.min.js"></script>
+
+  <script data-ad-client="ca-pub-9719587075754660" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark navbar-static-top" style="background-color: #000000;">
+    <a class="navbar-brand animated flip" href="#">Sharif</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="clearfix collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a class="fa fa-book nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            My Projects
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#emilia-api">Emilia API</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#thunder">Thunder</a>
           </div>
-        </div>
-        <div id="thunder" class="project project animated fadeInRight delay-5s">
-          <div style="width: 18rem;">
-            <img src="assets/images/thunder.png" class="border border-primary card-img-top" alt="thunder">
-            <div class="card-body">
-              <h2 class="card-title">Thunder</h2>
-              <p class="card-text">
-                Hello! I am Thunder, a simple but powerfull multipurpose bot <br>
-                Some of my features including high quality music, utilities and a lots of fun! <br>
-                Type <code>~help</code> to see my commands! <br>
-              </p>
-            </div>
-            <div class="card-body">
-              <a class="btn btn-primary fa fa-plus card-link" href="https://discordapp.com/oauth2/authorize?client_id=580626972741337088&scope=bot&permissions=70642768&guild_id=0"> Invite</a>
-            </div>
-          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <center>
+    <div id="particles-js" class="particle"></div>
+    <br><br><br>
+    <div class="projects">
+      <h1 class="animated bounce delay-1s"><i class="fas fa-user-circle"> SharifPoetra</i></h1><br>
+      <a href="mailto:sharifpoetra@gmail.com" class="btn btn-primary btn-lg animated fadeInLeft delay-1s" style="background-color:#123456"><i class="fas fa-envelope"> E-Mail</i></a>
+      <a href="https://github.com/SharifPoetra" class="btn btn-primary btn-lg animated fadeInLeft delay-1s" style="background-color:#24292E"><i class="fab fa-github"></i> GitHub</a>
+      <a href="https://discord.gg/ZEFrfj5" class="btn btn-primary btn-lg animated bounceIn delay-1s" style="background-color:#7289DA"><i class="fab fa-discord"> Discord</i></a>
+      <a href="https://twitter.com/SharifPoetra_" class="btn btn-primary btn-lg animated fadeInRight delay-1s" style="background-color:#4AB3F4"><i class="fab fa-twitter"> </i> Twitter</a>
+      <a href="https://twitch.tv/sharifpoetra" class="btn btn-primary btn-lg animated fadeInRight delay-1s" style="background-color:#4B367C"><i class="fab fa-twitch"> </i> Twitch</a>
+      <a href="https://reddit.com/u/SharifPoetra" class="btn btn-primary btn-lg animated fadeInLeft delay-1s" style="background-color:#FF4500"><i class="fab fa-reddit"> </i> Reddit</a>
+      <a href="https://paypal.me/poetrakencana" class="btn btn-primary btn-lg animated bounceIn delay-1s" style="background-color:#0070BA"><i class="fab fa-paypal"> </i> PayPal</a>
+      <a href="https://www.youtube.com/channel/UC10WpzT0YtNBW4STaVaY3yw" class="btn btn-primary btn-lg animated fadeInRight delay-1s" style="background-color:#FF0000"><i class="fab fa-youtube"> YouTube</i></a>
+      <a href="https://haste.shrf.xyz" class="btn btn-primary btn-lg animated fadeInRight delay-1s" style="background-color:#002b36"><i class="fas fa-paste"> </i> Haste</a>
+      <hr class="animated fadeIn delay-2s">
+      <h1 class="animated fadeInDown delay-3s"><i class="fa fa-user"> About Me</i></h1>
+      <p class="animated fadeInDown delay-3s">Hi i'm Sharif, you can call me SharifPoetra.<br>Hobby developer. Mainly developing in JS and Java. Trying to improve JS and Java skills. I like making things! Through code, all things are possible.</p>
+      <hr class="animated fadeInDown delay-4s">
+      <br>
+      <h1 class="animated fadeInDown delay-4s"><i class="fa fa-book"> My Projects</i></h1>
+      <div id="emilia-api" class="project animated fadeInLeft delay-5s">
+        <img src="assets/images/emilia.png" class="card-img-top" alt="emilia">
+        <div class="card-body">
+          <h2 class="card-title">Emilia API</h2>
+          <p class="card-text">Emilia API is a service that provides Discord bot developers or others the ease in getting content from the internet. We provide easy to use interface and take hard tasks away from developers.</p>
+          <a href="https://emilia.shrf.xyz" class="fas fa-file-alt btn btn-primary"> Documentation</a>
         </div>
       </div>
-    </center>
-    <script src="assets/js/particles.js"></script>
-    <script src="assets/js/app.js"></script>
-    <footer>
-      &copy; 2019 SharifPoetra
-    </footer>
-  </body>
+      <div id="thunder" class="project animated fadeInRight delay-5s">
+        <img src="assets/images/thunder.png" class="border border-primary card-img-top" alt="thunder">
+        <div class="card-body">
+          <h2 class="card-title">Thunder</h2>
+          <p class="card-text">
+            Hello! I am Thunder, a simple but powerfull multipurpose bot <br>
+            Some of my features including high quality music, utilities and a lots of fun! <br>
+            Type <code>~help</code> to see my commands! <br>
+          </p>
+            <a class="btn btn-primary fa fa-plus" href="https://discordapp.com/oauth2/authorize?client_id=580626972741337088&scope=bot&permissions=70642768&guild_id=0"> Invite</a>
+        </div>
+      </div>
+    </div>
+  </center>
+  <script src="assets/js/particles.js"></script>
+  <script src="assets/js/app.js"></script>
+  <footer>
+    &copy; 2019 SharifPoetra
+  </footer>
+</body>
+
 </html>
