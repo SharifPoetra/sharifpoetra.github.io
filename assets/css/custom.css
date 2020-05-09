@@ -12,10 +12,12 @@ body {
     transform: translateY(1rem);
     opacity: 0;
   }
+
   100% {
     transform: translateY(0rem);
     opacity: 1;
   }
+
   0% {
     transform: translateY(1rem);
     opacity: 0;
@@ -27,10 +29,12 @@ body {
     -webkit-transform: transform;
     -webkit-opacity: 0;
   }
+
   100% {
     -webkit-transform: translateY(0);
     -webkit-opacity: 1;
   }
+
   0% {
     -webkit-transform: translateY(1rem);
     -webkit-opacity: 0;
@@ -41,9 +45,11 @@ body {
   0% {
     background-position: 50% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 50% 50%;
   }
@@ -56,31 +62,27 @@ body {
 
 body {
   background: #007bff;
-  background: linear-gradient(
-    270deg,
-    #6199c6,
-    #9e64e0,
-    #d9c766,
-    #fba18c,
-    #6bd186,
-    #625cb5,
-    #5eb89d,
-    #b55992
-  );
+  background: linear-gradient(270deg,
+      #6199c6,
+      #9e64e0,
+      #d9c766,
+      #fba18c,
+      #6bd186,
+      #625cb5,
+      #5eb89d,
+      #b55992);
 }
 
 body {
-  linear-gradient: (
-    270deg,
-    #6199c6,
-    #9e64e0,
-    #6199c6,
-    #fba180,
-    #6bd186,
-    #625cb5,
-    #5eb89d,
-    #b55992
-  );
+  linear-gradient: (270deg,
+      #6199c6,
+      #9e64e0,
+      #6199c6,
+      #fba180,
+      #6bd186,
+      #625cb5,
+      #5eb89d,
+      #b55992);
   background-size: 1600% 1600%;
   animation: AnimationName 59s ease infinite;
 }
@@ -102,15 +104,17 @@ center {
   margin-top: 0px;
 }
 
+.btn {
+  border: none;
+}
+
 .btn-primary {
   color: rgba(255, 255, 255, 0.9);
-  border-color: grey;
-  border-width: 2px;
 }
 
 .btn-primary:hover,
 .btn-primary:focus {
-  border-color: black;
+  color: rgba(255, 255, 255, 0.5);
 }
 
 hr {
@@ -155,6 +159,7 @@ hr {
   color: #CCC;
   max-width: 360px;
   margin: 12px;
+  height: 500px;
   margin-top: 32px;
   padding: 12px;
   display: inline-table;
@@ -183,6 +188,10 @@ hr {
   .project img {
     float: right;
   }
+}
+
+.btn-project {
+  bottom: 5px;
 }
 
 footer {
