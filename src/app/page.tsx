@@ -9,27 +9,30 @@ const PROJECTS = [
     description: "A turn-based Discord RPG bot. Focused on grinding, a 100-floor dungeon, class system, and scalable economy.",
     image: "/images/nova.jpg",
     tags: ["Node.js", "Discord.js", "MongoDB"],
-    link: "https://github.com/SharifPoetra/nova"
+    source: "https://github.com/SharifPoetra/nova",
+    link: "https://sharifpoetra.github.io/nova"
   },
   {
     title: "Laffey (Archived)",
     description: "Anime-themed features, economy games, and automated moderation tools built specifically for community engagement.",
     image: "/images/laffey.png",
     tags: ["Node.js", "Discord.js", "Canvas API"],
-    link: "https://github.com/SharifPoetra"
+    source: "https://github.com/SharifPoetra",
+    link: null
   },
   {
     title: "Thunder (Archived)",
     description: "A multipurpose Discord bot to make your server more lively. Features modular commands and advanced music playbacks.",
     image: "/images/thunder.png",
     tags: ["Java", "JDA"],
-    link: "https://github.com/SharifPoetra/thunder-java"
+    source: "https://github.com/SharifPoetra/thunder-java",
+    link: null
   }
 ];
 
 const TECH_STACK = [
   { category: "Languages", items: ["JavaScript", "TypeScript", "Java", "HTML/CSS"] },
-  { category: "Frameworks/Libraries", items: ["Next.js", "React", "Tailwind CSS", "Discord.js"] },
+  { category: "Frameworks/Libraries", items: ["Next.js", "React", "Tailwind CSS", "Discord.js", "JDA"] },
   { category: "Databases & Tools", items: ["MongoDB", "PostgresSQL", "Git", "Node.js", "NPM", "Docker"] }
 ];
 
@@ -173,14 +176,27 @@ export default function Home() {
                     ))}
                   </div>
                   
-                  <a 
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center text-xs font-mono font-bold tracking-wider text-blue-400 gap-1"
-                  >
-                    VIEW_SOURCE →
-                  </a>
+                  <div className="flex items-center gap-4 pt-1">
+                    {project.link && (
+                      <a 
+                        href={project.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center text-xs font-mono font-bold tracking-wider text-emerald-400 hover:text-emerald-300 transition-colors gap-1"
+                      >
+                        VIEW_PAGE →
+                      </a>
+                    )}
+                    
+                    <a 
+                      href={project.source}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center text-xs font-mono font-bold tracking-wider text-blue-400 hover:text-blue-300 transition-colors gap-1"
+                    >
+                      VIEW_SOURCE →
+                    </a>
+                  </div>
                 </div>
               </div>
             ))}
