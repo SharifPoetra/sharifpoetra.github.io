@@ -9,21 +9,21 @@ const PROJECTS = [
     description: "A turn-based Discord RPG bot. Focused on grinding, a 100-floor dungeon, class system, and scalable economy.",
     image: "/images/nova.jpg",
     tags: ["Node.js", "Discord.js", "MongoDB"],
-    link: "https://github.com/sharifpoetra/nova"
+    link: "https://github.com/SharifPoetra/nova"
   },
   {
     title: "Laffey (Archived)",
     description: "Anime-themed features, economy games, and automated moderation tools built specifically for community engagement.",
     image: "/images/laffey.png",
     tags: ["Node.js", "Discord.js", "Canvas API"],
-    link: "https://github.com/sharifpoetra"
+    link: "https://github.com/SharifPoetra"
   },
   {
     title: "Thunder (Archived)",
     description: "A multipurpose Discord bot to make your server more lively. Features modular commands and advanced music playbacks.",
     image: "/images/thunder.png",
     tags: ["Java", "JDA"],
-    link: "https://github.com/sharifpoetra/thunder-java"
+    link: "https://github.com/SharifPoetra/thunder-java"
   }
 ];
 
@@ -73,16 +73,16 @@ export default function Home() {
             </p>
             
             <div className="flex justify-center md:justify-start gap-5 pt-2 font-mono text-sm">
-              <a href="https://github.com/sharifpoetra" target="_blank" rel="noreferrer" className="text-zinc-400 hover:text-white transition-colors relative group py-1">
+              <a href="https://github.com/SharifPoetra" target="_blank" rel="noreferrer" className="text-zinc-400 hover:text-white transition-colors relative group py-1">
                 [ github ]
                 <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-blue-400 transition-all group-hover:w-full" />
               </a>
-              <a href="https://instagram.com" target="_blank" rel="noreferrer" className="text-zinc-400 hover:text-white transition-colors relative group py-1">
+              <a href="https://instagram.com/sharifpoetra" target="_blank" rel="noreferrer" className="text-zinc-400 hover:text-white transition-colors relative group py-1">
                 [ instagram ]
                 <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-blue-400 transition-all group-hover:w-full" />
               </a>
-              <a href="mailto:contact@sharif.id" className="text-zinc-400 hover:text-white transition-colors relative group py-1">
-                [ email ]
+              <a href="https://discord.gg/ZEFrfj5" className="text-zinc-400 hover:text-white transition-colors relative group py-1">
+                [ discord ]
                 <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-blue-400 transition-all group-hover:w-full" />
               </a>
             </div>
