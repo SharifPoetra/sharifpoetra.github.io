@@ -1,6 +1,6 @@
 # 🌐 mohd.syarif — Personal Portfolio
 
-[![Deploy Next.js to Pages](https://github.com/SharifPoetra/sharifpoetra.github.io/actions/workflows/deploy.yml/badge.flow.svg)](https://github.com/SharifPoetra/sharifpoetra.github.io/actions/workflows/deploy.yml)
+[![Deploy Next.js to Pages](https://github.com/SharifPoetra/sharifpoetra.github.io/actions/workflows/deploy.yml/badge.svg)](https://github.com/SharifPoetra/sharifpoetra.github.io/actions/workflows/deploy.yml)
 [![Framework: Next.js](https://img.shields.io/badge/Framework-Next.js-000000?style=flat&logo=next.dotjs)](https://nextjs.org/)
 [![Tech: Tailwind v4](https://img.shields.io/badge/CSS-Tailwind__v4-38bdf8?style=flat&logo=tailwindcss)](https://tailwindcss.com/)
 
