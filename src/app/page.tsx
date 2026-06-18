@@ -1,49 +1,69 @@
 "use client";
 
-import React from 'react';
-import Image from 'next/image';
+import React from "react";
+import Image from "next/image";
 
 const PROJECTS = [
   {
+    title: "TermiBoard",
+    description:
+      "A real-time collaborative kanban board application designed for seamless team workflows.",
+    image: "/images/termiboard.png",
+    tags: ["Node.js", "Fastify", "React", "PostgreSQL"],
+    source: "https://github.com/SharifPoetra/termiboard",
+    link: "https://sharifpoetra.github.io/termiboard",
+  },
+  {
     title: "Nova",
-    description: "A turn-based Discord RPG bot. Focused on grinding, a 100-floor dungeon, class system, and scalable economy.",
+    description:
+      "A turn-based Discord RPG bot. Focused on grinding, a 100-floor dungeon, class system, and scalable economy.",
     image: "/images/nova.jpg",
     tags: ["Node.js", "Discord.js", "MongoDB"],
     source: "https://github.com/SharifPoetra/nova",
-    link: "https://sharifpoetra.github.io/nova"
+    link: "https://sharifpoetra.github.io/nova",
   },
   {
     title: "Laffey (Archived)",
-    description: "Anime-themed features, economy games, and automated moderation tools built specifically for community engagement.",
+    description:
+      "Anime-themed features, economy games, and automated moderation tools built specifically for community engagement.",
     image: "/images/laffey.png",
     tags: ["Node.js", "Discord.js", "Canvas API"],
     source: "https://github.com/SharifPoetra",
-    link: null
+    link: null,
   },
   {
     title: "Thunder (Archived)",
-    description: "A multipurpose Discord bot to make your server more lively. Features modular commands and advanced music playbacks.",
+    description:
+      "A multipurpose Discord bot to make your server more lively. Features modular commands and advanced music playbacks.",
     image: "/images/thunder.png",
     tags: ["Java", "JDA"],
     source: "https://github.com/SharifPoetra/thunder-java",
-    link: null
-  }
+    link: null,
+  },
 ];
 
 const TECH_STACK = [
-  { category: "Languages", items: ["JavaScript", "TypeScript", "Java", "HTML/CSS"] },
-  { category: "Frameworks/Libraries", items: ["Next.js", "React", "Tailwind CSS", "Discord.js", "JDA"] },
-  { category: "Databases & Tools", items: ["MongoDB", "PostgresSQL", "Git", "Node.js", "NPM", "Docker"] }
+  {
+    category: "Languages",
+    items: ["JavaScript", "TypeScript", "Java", "HTML/CSS"],
+  },
+  {
+    category: "Frameworks/Libraries",
+    items: ["Next.js", "React", "Tailwind CSS", "Discord.js", "JDA"],
+  },
+  {
+    category: "Databases & Tools",
+    items: ["MongoDB", "PostgresSQL", "Git", "Node.js", "NPM", "Docker"],
+  },
 ];
 
 export default function Home() {
   return (
     <main className="relative min-h-screen bg-[#09090b] text-zinc-50 font-sans antialiased overflow-x-hidden selection:bg-blue-500/30 selection:text-blue-200">
-      
       {/* BACKGROUND LAYER */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         <div className="absolute inset-0 cyber-grid" />
-        
+
         {/* Ambient Glows */}
         <div className="absolute top-0 left-1/4 w-[500px] h-[400px] bg-blue-500/10 blur-[130px] rounded-full" />
         <div className="absolute top-1/3 right-1/4 w-[400px] h-[400px] bg-indigo-500/5 blur-[120px] rounded-full" />
@@ -51,7 +71,6 @@ export default function Home() {
 
       {/* CONTENT LAYER */}
       <div className="relative z-10">
-        
         {/* HERO SECTION */}
         <section className="max-w-4xl mx-auto pt-28 pb-16 px-6 text-center md:text-left flex flex-col md:flex-row items-center justify-between gap-12">
           <div className="space-y-5 max-w-xl flex-1">
@@ -72,19 +91,38 @@ export default function Home() {
               mohd.syarif
             </h1>
             <p className="text-zinc-400 text-lg md:text-xl leading-relaxed">
-              Hobby developer. Mainly developing tools in <span className="text-blue-400 font-medium font-mono">JavaScript</span> and <span className="text-amber-500 font-medium font-mono">Java</span>. I like making things that live on the internet.
+              Hobby developer. Mainly developing tools in{" "}
+              <span className="text-blue-400 font-medium font-mono">
+                JavaScript
+              </span>{" "}
+              and{" "}
+              <span className="text-amber-500 font-medium font-mono">Java</span>
+              . I like making things that live on the internet.
             </p>
-            
+
             <div className="flex justify-center md:justify-start gap-5 pt-2 font-mono text-sm">
-              <a href="https://github.com/SharifPoetra" target="_blank" rel="noreferrer" className="text-zinc-400 hover:text-white transition-colors relative group py-1">
+              <a
+                href="https://github.com/SharifPoetra"
+                target="_blank"
+                rel="noreferrer"
+                className="text-zinc-400 hover:text-white transition-colors relative group py-1"
+              >
                 [ github ]
                 <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-blue-400 transition-all group-hover:w-full" />
               </a>
-              <a href="https://instagram.com/sharifpoetra" target="_blank" rel="noreferrer" className="text-zinc-400 hover:text-white transition-colors relative group py-1">
+              <a
+                href="https://instagram.com/sharifpoetra"
+                target="_blank"
+                rel="noreferrer"
+                className="text-zinc-400 hover:text-white transition-colors relative group py-1"
+              >
                 [ instagram ]
                 <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-blue-400 transition-all group-hover:w-full" />
               </a>
-              <a href="https://discord.gg/ZEFrfj5" className="text-zinc-400 hover:text-white transition-colors relative group py-1">
+              <a
+                href="https://discord.gg/ZEFrfj5"
+                className="text-zinc-400 hover:text-white transition-colors relative group py-1"
+              >
                 [ discord ]
                 <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-blue-400 transition-all group-hover:w-full" />
               </a>
@@ -94,7 +132,7 @@ export default function Home() {
           <div className="relative group flex-shrink-0">
             <div className="absolute inset-0 bg-gradient-to-tr from-blue-500 to-indigo-600 rounded-full blur-xl opacity-20" />
             <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full p-1 bg-zinc-900 border border-zinc-800 overflow-hidden">
-              <Image 
+              <Image
                 src="/images/nova.jpg"
                 alt="mohd.syarif"
                 width={160}
@@ -112,11 +150,19 @@ export default function Home() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {TECH_STACK.map((stack, idx) => (
-              <div key={idx} className="p-4 rounded-xl border border-zinc-800/60 bg-zinc-900/20 backdrop-blur-sm">
-                <h3 className="text-xs font-mono text-zinc-400 mb-2.5 uppercase tracking-wider">// {stack.category}</h3>
+              <div
+                key={idx}
+                className="p-4 rounded-xl border border-zinc-800/60 bg-zinc-900/20 backdrop-blur-sm"
+              >
+                <h3 className="text-xs font-mono text-zinc-400 mb-2.5 uppercase tracking-wider">
+                  // {stack.category}
+                </h3>
                 <div className="flex flex-wrap gap-1.5">
                   {stack.items.map((item, itemIdx) => (
-                    <span key={itemIdx} className="px-2 py-0.5 text-xs rounded bg-zinc-900/60 border border-zinc-800 text-zinc-300 font-sans">
+                    <span
+                      key={itemIdx}
+                      className="px-2 py-0.5 text-xs rounded bg-zinc-900/60 border border-zinc-800 text-zinc-300 font-sans"
+                    >
                       {item}
                     </span>
                   ))}
@@ -134,8 +180,8 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {PROJECTS.map((project, index) => (
-              <div 
-                key={index} 
+              <div
+                key={index}
                 className="group relative rounded-2xl border border-blue-500/20 bg-zinc-900/40 backdrop-blur-md p-5 flex flex-col justify-between shadow-xl transition-all duration-300 hover:border-blue-500/50"
               >
                 <div className="absolute inset-0 -z-10 bg-gradient-to-b from-blue-500/[0.02] to-transparent rounded-2xl" />
@@ -167,18 +213,18 @@ export default function Home() {
                 <div className="pt-6 space-y-4">
                   <div className="flex flex-wrap gap-1.5">
                     {project.tags.map((tag, tagIdx) => (
-                      <span 
-                        key={tagIdx} 
+                      <span
+                        key={tagIdx}
                         className="px-2 py-0.5 text-[11px] font-mono rounded bg-zinc-900 border border-zinc-800 text-zinc-400"
                       >
                         {tag}
                       </span>
                     ))}
                   </div>
-                  
+
                   <div className="flex items-center gap-4 pt-1">
                     {project.link && (
-                      <a 
+                      <a
                         href={project.link}
                         target="_blank"
                         rel="noopener noreferrer"
@@ -187,8 +233,8 @@ export default function Home() {
                         VIEW_PAGE →
                       </a>
                     )}
-                    
-                    <a 
+
+                    <a
                       href={project.source}
                       target="_blank"
                       rel="noopener noreferrer"
