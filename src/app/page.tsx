@@ -133,7 +133,7 @@ export default function Home() {
             <div className="absolute inset-0 bg-gradient-to-tr from-blue-500 to-indigo-600 rounded-full blur-xl opacity-20" />
             <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full p-1 bg-zinc-900 border border-zinc-800 overflow-hidden">
               <Image
-                src="/images/nova.jpg"
+                src="/images/profile.jpeg"
                 alt="mohd.syarif"
                 width={160}
                 height={160}
