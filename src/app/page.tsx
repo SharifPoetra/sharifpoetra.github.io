@@ -11,7 +11,7 @@ const PROJECTS = [
     image: "/images/termiboard.png",
     tags: ["Node.js", "Fastify", "React", "PostgreSQL"],
     source: "https://github.com/SharifPoetra/termiboard",
-    link: "https://sharifpoetra.github.io/termiboard",
+    link: "https://termiboard.sharif.my.id",
   },
   {
     title: "Nova",
@@ -20,7 +20,7 @@ const PROJECTS = [
     image: "/images/nova.jpg",
     tags: ["Node.js", "Discord.js", "MongoDB"],
     source: "https://github.com/SharifPoetra/nova",
-    link: "https://sharifpoetra.github.io/nova",
+    link: "https://sharif.my.id/nova",
   },
   {
     title: "Laffey (Archived)",
@@ -124,6 +124,13 @@ export default function Home() {
                 className="text-zinc-400 hover:text-white transition-colors relative group py-1"
               >
                 [ discord ]
+                <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-blue-400 transition-all group-hover:w-full" />
+              </a>
+              <a
+                href="mailto:contact@sharif.my.id"
+                className="text-zinc-400 hover:text-white transition-colors relative group py-1"
+              >
+                [ email ]
                 <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-blue-400 transition-all group-hover:w-full" />
               </a>
             </div>
